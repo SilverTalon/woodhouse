@@ -5,7 +5,13 @@ angular.module('woodhouse', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
     $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController',
+        controllerAs: 'main',
+        resolve: {
+          weather: function(WeatherService) {
+            return WeatherService.getWeather();
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'
