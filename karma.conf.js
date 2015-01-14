@@ -10,8 +10,20 @@ module.exports = function(config) {
     browsers : ['PhantomJS'],
 
     plugins : [
-        'karma-phantomjs-launcher',
-        'karma-jasmine'
-    ]
+      'karma-phantomjs-launcher',
+      'karma-jasmine',
+      'karma-coverage'
+    ],
+
+    preprocessors: {
+      'src/**/!(*Spec).js': ['coverage']
+    },
+
+    reporters: ['coverage'],
+
+    coverageReporter: {
+      type : 'lcov',
+      dir : 'coverage/'
+    }
   });
 };
