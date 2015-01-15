@@ -30,8 +30,11 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     coverageReporter: {
-      type : 'text-summary',
-      dir : 'coverage/'
+      dir : 'coverage/',
+      reporters: [
+        { type: 'lcov', subdir: 'report-lcov' },
+        { type: 'text', subdir: '.' }	
+      ]
     }
   });
 };
