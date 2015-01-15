@@ -8,8 +8,8 @@ angular.module('woodhouse', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
         controller: 'MainController',
         controllerAs: 'main',
         resolve: {
-          weather: function(WeatherService) {
-            return WeatherService.getWeather();
+          weather: function(weatherService) {
+            return weatherService.getWeather();
           }
         }
       })

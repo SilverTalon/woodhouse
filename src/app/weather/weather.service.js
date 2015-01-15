@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('woodhouse')
-  .service('WeatherService', function ($http) {
+  .service('weatherService', function ($http) {
 
     this.getWeather = function() {
       return $http.get('/json/weather.json');

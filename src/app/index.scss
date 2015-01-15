@@ -12,7 +12,7 @@ html, body {
 }
 
 // injector
+@import '../components/navbar/navbar.scss';
 @import 'main/main.scss';
 @import 'time/time-home.scss';
-@import '../components/navbar/navbar.scss';
 // endinjector

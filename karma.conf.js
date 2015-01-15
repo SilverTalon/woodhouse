@@ -4,6 +4,7 @@ module.exports = function(config) {
 
   config.set({
     autoWatch : false,
+    colors: true,
 
     frameworks: ['jasmine'],
 
@@ -29,7 +30,7 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     coverageReporter: {
-      type : 'lcov',
+      type : 'text-summary',
       dir : 'coverage/'
     }
   });
