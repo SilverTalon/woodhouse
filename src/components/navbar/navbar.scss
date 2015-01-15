@@ -1,0 +1,29 @@
+$navbar-icon-size: 3em;
+$navbar-icon-color: #CCC;
+$navbar-icon-color-active: #FFF;
+$navbar-background: transparent;
+
+.navbar-static-top {
+  font-size: $navbar-icon-size;
+  background: $navbar-background;
+
+  .navbar-brand {
+    font-size: inherit;
+  }
+
+  .nav > li > a {
+    color: $navbar-icon-color;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &.active {
+      color: $navbar-icon-color-active;
+      background: $navbar-background;
+    }
+  }
+
+  .weather {
+    color: $navbar-icon-color;
+  }
+}

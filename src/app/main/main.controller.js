@@ -3,5 +3,6 @@
 angular.module('woodhouse')
   .controller('MainController', function ($scope, weather) {
 
-    this.weather = weather.data;
+    var vm = this;
+    vm.weather = weather.data;
   });

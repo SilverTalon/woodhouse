@@ -6,27 +6,32 @@ angular.module('woodhouse')
       restrict: 'E',
       scope: {
         timeFormat: '@',
-        dateFormat: '@'
+        dateFormat: '@',
+        template: '@'
       },
-      link: function(scope, element, attrs) {
-        if(_.isUndefined(scope.timeFormat)) {
-          scope.timeFormat = '';
-        }
+      templateUrl: function(elem,attrs) {
+        return 'app/time/time-'+attrs.template+'.html';
+      },
+      controller: function($element, $attrs) {
+        var timeoutId;
 
-        if(_.isUndefined(scope.dateFormat)) {
-          scope.dateFormat = '';
-        }
-
-        var format = scope.timeFormat + ' ' + scope.dateFormat;
+        var vm = this;
+        vm.time = '';
+        vm.date = '';
 
         var updateTime = function() {
           var now = Date.now();
-
-          element.html(dateFilter(now, format));
-          $timeout(updateTime, 1000);
+          if($attrs.timeFormat) { vm.time = dateFilter(now, $attrs.timeFormat); }
+          if($attrs.dateFormat) { vm.date = dateFilter(now, $attrs.dateFormat); }
+          timeoutId = $timeout(updateTime, 1000);
         };
 
+        $element.bind('$destroy', function() {
+          $timeout.cancel(timeoutId);
+        });
+
         updateTime();
-      }
+      },
+      controllerAs: 'clock'
     };
   });
