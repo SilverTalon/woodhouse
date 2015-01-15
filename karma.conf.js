@@ -12,14 +12,21 @@ module.exports = function(config) {
     plugins : [
       'karma-phantomjs-launcher',
       'karma-jasmine',
-      'karma-coverage'
+      'karma-coverage',
+      'karma-ng-html2js-preprocessor'
     ],
 
     preprocessors: {
-      'src/**/!(*Spec).js': ['coverage']
+      'src/**/!(*Spec).js': ['coverage'],
+      'src/**/*.html': ['ng-html2js']
     },
 
-    reporters: ['coverage'],
+    ngHtml2JsPreprocessor: {
+      stripPrefix: 'src/',
+      moduleName: 'templates'
+    },
+
+    reporters: ['progress', 'coverage'],
 
     coverageReporter: {
       type : 'lcov',

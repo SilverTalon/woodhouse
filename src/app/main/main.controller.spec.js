@@ -1,22 +1,23 @@
 'use strict';
 
-describe('controllers', function(){
-  var scope;
+describe('MainController', function(){
+  var weather;
 
   beforeEach(module('woodhouse'));
 
-  beforeEach(inject(function($rootScope) {
-  	scope = $rootScope.$new();
+  beforeEach(inject(function() {
+  	weather = {
+      'condition': 'good'
+    };
   }));
 
-  it('should define more than 5 awesome things', inject(function($controller) {
-    expect(scope.awesomeThings).toBeUndefined();
+  it('should have weather', inject(function($controller) {
+    expect(weather).toBeDefined();
 
     $controller('MainController', {
-      $scope: scope
+      weather: weather
   	});
 
-    expect(angular.isArray(scope.awesomeThings)).toBeTruthy();
-    expect(scope.awesomeThings.length > 5).toBeTruthy();
+    expect(weather.condition).toBe('good');
   }));
 });

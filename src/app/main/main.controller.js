@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('woodhouse')
-  .controller('MainController', function ($scope, weather) {
+  .controller('MainController', function (weather) {
 
     var vm = this;
     vm.weather = weather.data;
