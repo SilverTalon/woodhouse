@@ -10,6 +10,9 @@ angular.module('woodhouse', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
         resolve: {
           weather: function(weatherService) {
             return weatherService.getWeather();
+          },
+          calendar: function(calendarService) {
+            return calendarService.getToday();
           }
         }
       })

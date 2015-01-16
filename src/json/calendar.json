@@ -1,0 +1,41 @@
+{
+  "today": [
+    {
+      "name": "Dentist",
+      "assigned_to": ["jamie"],
+      "time": "1421442000",
+      "location": "Maybe plug in google maps link here?"
+    },
+    {
+      "name": "Mortgage Meeting",
+      "assigned_to": ["jason", "jamie"],
+      "time": "1421449200",
+      "location": "Maybe plug in google maps link here?"
+    }
+  ],
+  "tomorrow": [
+    {
+      "name": "Game Night",
+      "assigned_to": ["jason", "jamie"],
+      "time": "1421497800",
+      "location": "Maybe plug in google maps link here?"
+    }
+  ],
+  "week": {
+    "sunday": [],
+    "monday": [],
+    "tuesday": [],
+    "wednesday": [],
+    "thursday": [],
+    "friday": [],
+    "saturday": []
+  },
+  "month": {
+    "1": [],
+    "2": [],
+    "3": "Continue on...."
+  },
+  "year": {
+    "2015": []
+  }
+}
