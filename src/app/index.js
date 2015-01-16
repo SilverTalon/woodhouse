@@ -16,6 +16,19 @@ angular.module('woodhouse', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
           }
         }
       })
+      .when('/apps', {
+        templateUrl: 'app/apps/apps.html',
+        controller: 'AppsController',
+        controllerAs: 'main',
+        resolve: {
+          weather: function(weatherService) {
+            return weatherService.getWeather();
+          },
+          apps: function(appsService) {
+            return appsService.getApps();
+          }
+        }
+      })
       .otherwise({
         redirectTo: '/'
       });

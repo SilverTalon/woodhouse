@@ -6,7 +6,5 @@ angular.module('woodhouse')
     var vm = this;
     vm.weather = weather.data;
     vm.calendar = calendar;
-
-    console.dir(vm);
-    return vm;
+    vm.menuURL = '#/apps';
   });
