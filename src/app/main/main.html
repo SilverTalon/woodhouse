@@ -1,8 +1,17 @@
 <div ng-include ng-controller="NavbarController as navbar" src="'components/navbar/navbar.html'"></div>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 widget">
+    <div class="col-xs-4 col-xs-offset-4 widget">
       <clock time-format="hh:mm" date-format="EEE MMM dd" template="home"></clock>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-4 widget calendar" ng-repeat="event in main.calendar">
+      <span class="user" ng-bind="event.assigned_to[0]"></span>
+      <span>-</span>
+      <span class="event" ng-bind="event.name"></span>
+      <span>@</span>
+      <span class="event" ng-bind="event.time | date:'hh:mm'"></span>
     </div>
   </div>
 </div>

@@ -2,22 +2,22 @@
   "today": [
     {
       "name": "Dentist",
-      "assigned_to": ["jamie"],
-      "time": "1421442000",
+      "assigned_to": ["Jamie"],
+      "time": "1421442000000",
       "location": "Maybe plug in google maps link here?"
     },
     {
       "name": "Mortgage Meeting",
-      "assigned_to": ["jason", "jamie"],
-      "time": "1421449200",
+      "assigned_to": ["Jason", "Jamie"],
+      "time": "1421449200000",
       "location": "Maybe plug in google maps link here?"
     }
   ],
   "tomorrow": [
     {
       "name": "Game Night",
-      "assigned_to": ["jason", "jamie"],
-      "time": "1421497800",
+      "assigned_to": ["Jason", "Jamie"],
+      "time": "1421497800000",
       "location": "Maybe plug in google maps link here?"
     }
   ],
