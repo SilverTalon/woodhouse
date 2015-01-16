@@ -22,7 +22,7 @@ gulp.task('injector:css:preprocessor', function () {
     .pipe($.inject(gulp.src([
         'src/{app,components}/**/*.scss',
         '!src/app/index.scss',
-        '!src/app/vendor.scss' 
+        '!src/app/vendor.scss'
       ], {read: false}), {
       transform: function(filePath) {
         filePath = filePath.replace('src/app/', '');
@@ -134,6 +134,9 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('misc', function () {
+  gulp.src('src/json/*')
+  .pipe(gulp.dest('dist/json/'));
+
   return gulp.src('src/**/*.ico')
     .pipe(gulp.dest('dist/'));
 });

@@ -2,9 +2,12 @@
 
   .thumbnail {
     text-align: center;
+    background-color: transparent;
+    border-width: 5px;
 
     i {
       font-size: 96px;
+      color: #FFF;
     }
   }
 

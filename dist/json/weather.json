@@ -1,0 +1,473 @@
+{
+  "response": {
+    "version": "0.1",
+    "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+    "features": {
+      "forecast": 1,
+      "conditions": 1
+    }
+  },
+  "current_observation": {
+    "image": {
+      "url": "http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "display_location": {
+      "full": "Macomb, MI",
+      "city": "Macomb",
+      "state": "MI",
+      "state_name": "Michigan",
+      "country": "US",
+      "country_iso3166": "US",
+      "zip": "48042",
+      "magic": "1",
+      "wmo": "99999",
+      "latitude": "42.68441010",
+      "longitude": "-82.91795349",
+      "elevation": "188.00000000"
+    },
+    "observation_location": {
+      "full": "26 Mile and North Ave, Macomb, Michigan",
+      "city": "26 Mile and North Ave, Macomb",
+      "state": "Michigan",
+      "country": "US",
+      "country_iso3166": "US",
+      "latitude": "42.712223",
+      "longitude": "-82.876022",
+      "elevation": "627 ft"
+    },
+    "estimated": {},
+    "station_id": "KMIMACOM6",
+    "observation_time": "Last Updated on January 13, 9:01 PM EST",
+    "observation_time_rfc822": "Tue, 13 Jan 2015 21:01:51 -0500",
+    "observation_epoch": "1421200911",
+    "local_time_rfc822": "Tue, 13 Jan 2015 21:01:55 -0500",
+    "local_epoch": "1421200915",
+    "local_tz_short": "EST",
+    "local_tz_long": "America/New_York",
+    "local_tz_offset": "-0500",
+    "weather": "Mostly Cloudy",
+    "temperature_string": "-4.4 F (-20.2 C)",
+    "temp_f": -4.4,
+    "temp_c": -20.2,
+    "relative_humidity": "71%",
+    "wind_string": "Calm",
+    "wind_dir": "South",
+    "wind_degrees": 170,
+    "wind_mph": 0,
+    "wind_gust_mph": 0,
+    "wind_kph": 0,
+    "wind_gust_kph": 0,
+    "pressure_mb": "1037",
+    "pressure_in": "30.62",
+    "pressure_trend": "-",
+    "dewpoint_string": "-11 F (-24 C)",
+    "dewpoint_f": -11,
+    "dewpoint_c": -24,
+    "heat_index_string": "NA",
+    "heat_index_f": "NA",
+    "heat_index_c": "NA",
+    "windchill_string": "-4 F (-20 C)",
+    "windchill_f": "-4",
+    "windchill_c": "-20",
+    "feelslike_string": "-4 F (-20 C)",
+    "feelslike_f": "-4",
+    "feelslike_c": "-20",
+    "visibility_mi": "10.0",
+    "visibility_km": "16.1",
+    "solarradiation": "0",
+    "UV": "0.0",
+    "precip_1hr_string": "0.00 in ( 0 mm)",
+    "precip_1hr_in": "0.00",
+    "precip_1hr_metric": " 0",
+    "precip_today_string": "0.00 in (0 mm)",
+    "precip_today_in": "0.00",
+    "precip_today_metric": "0",
+    "icon": "mostlycloudy",
+    "icon_url": "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif",
+    "forecast_url": "http://www.wunderground.com/US/MI/Macomb.html",
+    "history_url": "http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KMIMACOM6",
+    "ob_url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=42.712223,-82.876022",
+    "nowcast": ""
+  },
+  "forecast": {
+    "txt_forecast": {
+      "date": "7:38 PM EST",
+      "forecastday": [
+        {
+          "period": 0,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Tuesday",
+          "fcttext": "Mostly clear. Lows overnight -4 to 0F.",
+          "fcttext_metric": "Mostly clear. Low -19C.",
+          "pop": "0"
+        },
+        {
+          "period": 1,
+          "icon": "nt_clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title": "Tuesday Night",
+          "fcttext": "A few passing clouds, otherwise generally clear. Low -2F. Winds light and variable.",
+          "fcttext_metric": "Mainly clear. Low -19C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 2,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Wednesday",
+          "fcttext": "Partly cloudy. High around 20F. Winds light and variable.",
+          "fcttext_metric": "Partly cloudy skies. High -7C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 3,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Wednesday Night",
+          "fcttext": "A few clouds from time to time. Low 6F. Winds SSW at 5 to 10 mph.",
+          "fcttext_metric": "Partly cloudy skies. Low -14C. Winds SSW at 10 to 15 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 4,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Thursday",
+          "fcttext": "Sunshine and clouds mixed. High 24F. Winds SSW at 10 to 15 mph.",
+          "fcttext_metric": "Partly cloudy. High -4C. Winds SSW at 15 to 25 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 5,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Thursday Night",
+          "fcttext": "A few clouds from time to time. Low 19F. Winds W at 10 to 20 mph.",
+          "fcttext_metric": "A few clouds from time to time. Low -7C. Winds W at 15 to 30 km/h.",
+          "pop": "10"
+        },
+        {
+          "period": 6,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Friday",
+          "fcttext": "Some clouds in the morning will give way to mainly sunny skies for the afternoon. High 27F. Winds N at 5 to 10 mph.",
+          "fcttext_metric": "Partly cloudy skies. High -2C. Winds N at 10 to 15 km/h.",
+          "pop": "0"
+        },
+        {
+          "period": 7,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Friday Night",
+          "fcttext": "Partly cloudy. Low 14F. Winds SE at 5 to 10 mph.",
+          "fcttext_metric": "A few clouds. Low near -10C. Winds SE at 10 to 15 km/h.",
+          "pop": "10"
+        }
+      ]
+    },
+    "simpleforecast": {
+      "forecastday": [
+        {
+          "date": {
+            "epoch": "1421193600",
+            "pretty": "7:00 PM EST on January 13, 2015",
+            "day": 13,
+            "month": 1,
+            "year": 2015,
+            "yday": 12,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Tue",
+            "weekday": "Tuesday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/New_York"
+          },
+          "period": 1,
+          "high": {
+            "fahrenheit": "20",
+            "celsius": "-6"
+          },
+          "low": {
+            "fahrenheit": "-4",
+            "celsius": "-20"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": null,
+            "mm": null
+          },
+          "qpf_night": {
+            "in": 0,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day": {
+            "in": null,
+            "cm": null
+          },
+          "snow_night": {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind": {
+            "mph": 11,
+            "kph": 18,
+            "dir": "",
+            "degrees": 0
+          },
+          "avewind": {
+            "mph": 3,
+            "kph": 4,
+            "dir": "NE",
+            "degrees": 45
+          },
+          "avehumidity": 86,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1421280000",
+            "pretty": "7:00 PM EST on January 14, 2015",
+            "day": 14,
+            "month": 1,
+            "year": 2015,
+            "yday": 13,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Wed",
+            "weekday": "Wednesday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/New_York"
+          },
+          "period": 2,
+          "high": {
+            "fahrenheit": "20",
+            "celsius": "-7"
+          },
+          "low": {
+            "fahrenheit": "6",
+            "celsius": "-14"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night": {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "W",
+            "degrees": 281
+          },
+          "avewind": {
+            "mph": 5,
+            "kph": 8,
+            "dir": "W",
+            "degrees": 281
+          },
+          "avehumidity": 73,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1421366400",
+            "pretty": "7:00 PM EST on January 15, 2015",
+            "day": 15,
+            "month": 1,
+            "year": 2015,
+            "yday": 14,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Thu",
+            "weekday": "Thursday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/New_York"
+          },
+          "period": 3,
+          "high": {
+            "fahrenheit": "24",
+            "celsius": "-4"
+          },
+          "low": {
+            "fahrenheit": "19",
+            "celsius": "-7"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night": {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind": {
+            "mph": 15,
+            "kph": 24,
+            "dir": "SSW",
+            "degrees": 213
+          },
+          "avewind": {
+            "mph": 12,
+            "kph": 19,
+            "dir": "SSW",
+            "degrees": 213
+          },
+          "avehumidity": 76,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        },
+        {
+          "date": {
+            "epoch": "1421452800",
+            "pretty": "7:00 PM EST on January 16, 2015",
+            "day": 16,
+            "month": 1,
+            "year": 2015,
+            "yday": 15,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Fri",
+            "weekday": "Friday",
+            "ampm": "PM",
+            "tz_short": "EST",
+            "tz_long": "America/New_York"
+          },
+          "period": 4,
+          "high": {
+            "fahrenheit": "27",
+            "celsius": "-3"
+          },
+          "low": {
+            "fahrenheit": "14",
+            "celsius": "-10"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day": {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night": {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind": {
+            "mph": 10,
+            "kph": 16,
+            "dir": "N",
+            "degrees": 354
+          },
+          "avewind": {
+            "mph": 9,
+            "kph": 14,
+            "dir": "N",
+            "degrees": 354
+          },
+          "avehumidity": 74,
+          "maxhumidity": 0,
+          "minhumidity": 0
+        }
+      ]
+    }
+  }
+}
