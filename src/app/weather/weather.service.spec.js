@@ -5,12 +5,12 @@ describe('weatherService', function(){
 
   beforeEach(module('woodhouse'));
 
-  beforeEach(inject(function(_weatherService_, $httpBackend) {
+  beforeEach(inject(function(_weatherService_, _$httpBackend_) {
     weatherService = _weatherService_;
-    httpBackend = $httpBackend;
+    httpBackend = _$httpBackend_;
   }));
 
-  it('should get weather information', inject(function($compile, $rootScope) {
+  it('should get weather information', inject(function() {
     httpBackend.whenGET('/json/weather.json').respond({
       'response': {},
       'current_observation': {},

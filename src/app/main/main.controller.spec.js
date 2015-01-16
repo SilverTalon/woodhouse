@@ -18,7 +18,7 @@ describe('MainController', function(){
           'location': 'MAP_LINK'
         }
       ]
-    }
+    };
   }));
 
   it('should have weather', inject(function($controller) {
