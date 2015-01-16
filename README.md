@@ -12,6 +12,11 @@ Home Automation utilizing: Gulp, Bower, Angular and UI Bootstrap
 <br><br><br><br>
 
 
+### Demo
+
+https://silvertalon-woodhouse.herokuapp.com/#/
+
+
 ### Pre-requisites
 
 Protractor requires on JDK to be installed for the Selenium server to run.
