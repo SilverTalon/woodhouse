@@ -7,14 +7,17 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp test",
-    "postinstall": "bower install --config.interactive=false"
+    "postinstall": "bower install --config.interactive=false",
+    "coveralls": "gulp coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:silvertalon/woodhouse.git"
   },
   "readme": "README.md",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-coveralls": "^0.1.3"
+  },
   "devDependencies": {
     "browser-sync": "~1.9.0",
     "chalk": "~0.5.1",

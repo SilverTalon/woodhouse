@@ -4,6 +4,7 @@ Woodhouse
 Home Automation utilizing: Gulp, Bower, Angular and UI Bootstrap
 
 [![Build Status](https://travis-ci.org/SilverTalon/woodhouse.svg)](https://travis-ci.org/SilverTalon/woodhouse)
+[![Coverage Status](https://coveralls.io/repos/SilverTalon/woodhouse/badge.svg)](https://coveralls.io/r/SilverTalon/woodhouse)
 [![Dependency Status](https://david-dm.org/SilverTalon/woodhouse.svg)](https://david-dm.org/SilverTalon/woodhouse)
 [![devDependency Status](https://david-dm.org/SilverTalon/woodhouse/dev-status.svg)](https://david-dm.org/SilverTalon/woodhouse#info=devDependencies)
 
